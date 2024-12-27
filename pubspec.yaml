@@ -10,8 +10,6 @@ dependencies:
   in_app_purchase: any
   q_common_utils:
     path: ../q_common_utils
-  q_theme: 
-    path: ../q_theme
   flutter:
     sdk: flutter
 
