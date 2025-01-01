@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:q_common_utils/l.dart';
-import 'package:q_common_utils/ui_utils.dart';
+
+import 'package:q_common_utils/index.dart';
 
 import 'objs.dart';
 

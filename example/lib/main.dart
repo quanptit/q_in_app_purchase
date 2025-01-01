@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:q_common_utils/l.dart';
-import 'package:q_common_utils/ui_utils.dart';
+
+import 'package:q_common_utils/index.dart';
 import 'package:q_in_app_purchase/q_in_app_purchase.dart';
 
 void main() {
