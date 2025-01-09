@@ -3,7 +3,6 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 
 import 'package:q_common_utils/index.dart';
 
-import 'package:q_common_utils/index.dart';
 import 'package:q_in_app_purchase/src/objs.dart';
 import 'dart:async';
 
@@ -48,7 +47,7 @@ class InAppPurchaseRemoveAdsManager {
       successPurchaseProductRemoveAds();
       return;
     }
-    L.d("errorPurchase: ${purchaseDetails}");
+    L.d("errorPurchase: $purchaseDetails");
     UiUtils.showSnackBar(LanguagesUtils.getString("has_error", "Has error occurred"));
   }
 

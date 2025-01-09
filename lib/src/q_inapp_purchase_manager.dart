@@ -12,7 +12,7 @@ class QInappPurchaseManager {
   StreamSubscription<List<PurchaseDetails>>? _purchaseStream;
 
   //Sigleton
-  static late final QInappPurchaseManager _instance = QInappPurchaseManager._internal();
+  static final QInappPurchaseManager _instance = QInappPurchaseManager._internal();
 
   QInappPurchaseManager._internal();
 
@@ -47,10 +47,11 @@ class QInappPurchaseManager {
     if (productDetails != null) {
       final purchaseParam = PurchaseParam(productDetails: productDetails);
       L.d('Making the purchase ${isNonConsumable ? "NonConsumable" : "Consumable"} id: ${purchaseParam.productDetails.id}');
-      if (isNonConsumable)
+      if (isNonConsumable) {
         await InAppPurchase.instance.buyNonConsumable(purchaseParam: purchaseParam);
-      else
+      } else {
         await InAppPurchase.instance.buyConsumable(purchaseParam: purchaseParam);
+      }
     }
   }
 
